@@ -1,0 +1,81 @@
+/************ CSS Style for Module 2 solution */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1 {
+	margin:40px 0px;
+	font-size: 175%;
+	text-align:center;
+}
+
+#main-container {
+  margin: 0px auto;
+  max-width: 98%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#section1, #section2, #section3 {
+	width: 31.33%;
+	float: left;
+	position: relative;
+	margin:1%;
+	padding: 60px 20px;
+	background-color: #e0f444;
+	border: 1px solid #000;
+}
+
+.title-region {
+	width:150px;
+	position: absolute;
+	top:-1px;
+	right:-1px;
+	padding: 5px 0px;
+	font-size: 125%;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+#title-region1 {
+	background-color: #ccc;
+}
+
+#title-region2 {
+	background-color: #3e4b60;
+	color:#fff;
+}
+
+#title-region3 {
+	background-color: #000;
+	color:#fff;
+}
+
+/************ Media Queries*/
+
+/************ Tablet: 768px to 991px;*/
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	#section1, #section2 {
+	width: 48%;
+	}
+
+	#section3 {
+	width: 98%;
+	}
+}
+
+/************ Mobile: large than 991px;*/
+@media (max-width: 767px) {
+	
+	#section1, #section2, #section3 {
+	width: 98%;
+	}
+}
